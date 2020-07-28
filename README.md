@@ -6,7 +6,9 @@
   <img alt="Logo do projeto" width="150px" src="https://github.com/gabrielf7/pythonflix/blob/master/public/python-logo-green192.png" />
 </p>
 
-###### Acesse ![PythonFlix](https://pythonflix.vercel.app/)
+<p align="center">
+  #### Acesse ![PythonFlix](https://pythonflix.vercel.app/)
+</p>
 
 > Projeto construido durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
 
