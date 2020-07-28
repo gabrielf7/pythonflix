@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  #### Acesse ![PythonFlix](https://pythonflix.vercel.app/)
+  <a href="https://pythonflix.vercel.app" target="_blank">Acesse PythonFlix</a>
 </p>
 
 > Projeto construido durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
