@@ -45,8 +45,8 @@ body {
 }
   
 .ButtonLink {
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;
@@ -62,7 +62,8 @@ body {
 
 .ButtonLink:hover, 
 .ButtonLink:focus {
-    opacity: .5;
+  opacity: .5;
+  padding-top: 7px;
 }
   
 @media (max-width: 800px) {
