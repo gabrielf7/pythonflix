@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PythonFlix
 
-## Available Scripts
+[![licence mit](https://img.shields.io/badge/licence-MIT-green.svg)](https://github.com/gabrielf7/pythonflix/blob/master/LICENSE)
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Logo do projeto" width="150px" src="https://github.com/gabrielf7/pythonflix/blob/master/public/python-logo-green192.png" />
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="https://pythonflix.vercel.app" target="_blank">Acesse PythonFlix</a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Projeto construido durante a [Imersão React da Alura](https://www.alura.com.br/imersao-react/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Como rodar o projeto?
 
-### `npm test`
+Após baixar o projeto, acesse ele via seu terminal rode os comandos:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm install
+npm start
+```
 
-### `npm run build`
+## Features
+  - Projeto está designado ao público-alvo interessado em Python.
+  - O site do projeto é focado em compartilhar conteúdo que envolve Python.
+  - O projeto está hospedado em Vercel.
+  
+ 
+## License
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/gabrielf7/pythonflix/blob/master/LICENSE) file for details.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Create by [@gabrielf7](https://github.com/gabrielf7)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Please follow github and join us!
+Thanks to visiting me and good coding!
