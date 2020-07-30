@@ -79,5 +79,10 @@ body {
     border-radius: 0;
     border: 0;
     text-align: center;
+    transition: opacity .3s;
+  }
+  a.ButtonLink:hover, 
+  a.ButtonLink:focus {
+    opacity: .50;
   }
 }

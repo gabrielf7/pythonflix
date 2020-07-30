@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
+    background-color: inherit;
     color: var(--primary);
+    border: inherit;
     border-bottom: 1px solid var(--primary);
     box-sizing: border-box;
     cursor: pointer;
@@ -14,7 +16,7 @@ const Button = styled.button`
     text-decoration: none;
     display: inline-block;
     transition: opacity .5s ease-in;
-    
+
     &:hover, 
     &:focus {
         opacity: .50;
