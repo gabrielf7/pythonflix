@@ -14,6 +14,6 @@ export const FooterBase = styled.footer`
     margin-bottom: 50px;
   }
   .Logo {
-    max-width: 134px;
+    max-width: 168px;
   }
 `;

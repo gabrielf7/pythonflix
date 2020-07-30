@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
     color: var(--primary);
-    border: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;
@@ -13,14 +13,14 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .3s;
-
+    transition: opacity .5s ease-in;
+    
     &:hover, 
     &:focus {
-        opacity: .5;
-        padding-top: 7px;
+        opacity: .50;
+        border-top: 2px solid var(--white);
+        border-bottom: none;
     }
- 
 `;
 
 export default Button;

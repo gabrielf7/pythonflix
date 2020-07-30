@@ -6,16 +6,15 @@ import LogoImersaoReact from '../LogoImersaoReact';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://github.com/gabrielf7/pythonflix">
-        <img className="Logo" src={LogoPythonFlix} alt="Projeto do Python no GitHub" />
-      </a>
-      <p>
-        Orgulhosamente desenvolvido por <a href="https://github.com/gabrielf7">J.G</a>, durante a
-        {' '}
-        <a href="https://www.alura.com.br/">
-          <LogoImersaoReact />
+      <div className="center">
+        <a href="https://github.com/gabrielf7/pythonflix">
+          <img className="Logo" src={LogoPythonFlix} alt="Projeto do Python no GitHub" />
         </a>
-      </p>
+        <p>
+          Desenvolvido orgulhosamente por <a href="https://github.com/gabrielf7">$JG,</a>, durante a Imersão React da <a href="https://www.alura.com.br/"> Alura.</a>
+        </p>
+        <a href="https://www.alura.com.br/imersao-react"><LogoImersaoReact /></a>
+      </div>
     </FooterBase>
   );
 }
