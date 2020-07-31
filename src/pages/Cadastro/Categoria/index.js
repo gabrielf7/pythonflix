@@ -1,33 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 
 export default function CadastroCategoria(){
-    const [nomeDaCategoria, setNomeDaCategoria] = useState('Nome da Categoria:')
+  const [nomeDaCategoria] = useState('Valor Inicial');
+  
+  return (
+    <PageDefault>
+      <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
 
-    console.log('[nomeDaCategoria]', nomeDaCategoria);
+      <form>
+        <label>
+          Nome da Categoria:
+          <input
+            type="text"
+            value={nomeDaCategoria}
+            onChange={function funcaoHandle(info) {
+              console.log('[nomeDaCategoria]', nomeDaCategoria);
+              console.log('[information]', info.target.value);
+            }}
+          />
+        </label>
 
-    return(
-        <PageDefault>
-            <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
+        <button>
+          Cadastrar
+        </button>
+      </form>
 
-            <form>
-                <label>
-                    Nome da Categoria:
-                    <input
-                       type="text"
-                    />
-                </label>
-
-                <button>
-                    Cadastrar
-                </button>
-            </form>
-
-
-            <Link to="/">
-                Ir para home
-            </Link>
-        </PageDefault>
-    );
+      <Link to="/">
+          Ir para home
+      </Link>
+    </PageDefault>
+  );
 }

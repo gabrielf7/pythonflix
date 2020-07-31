@@ -83,6 +83,6 @@ body {
   }
   a.ButtonLink:hover, 
   a.ButtonLink:focus {
-    opacity: .50;
+    opacity: .85;
   }
 }
