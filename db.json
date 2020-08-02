@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Front End",
+            "descricao": "Curso de FrontEnd",
+            "cor": "#00ec1c"
+        },
+        {
+            "id": 2,
+            "nome": "Back End",
+            "descricao": "Curso de BackEnd",
+            "cor": "#00ec1c"
+        }
+    ]
+}

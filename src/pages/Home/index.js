@@ -7,13 +7,13 @@ import Footer from '../../components/Footer';
 
 function Home() {
   return (
-    <div style={{ background: "#141414" }}>
+    <div style={{ background: '#141414' }}>
       <Menu />
 
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Com o crescimento do Data Science e Machine Learning, cada vez mais bibliotecas são escritas em Python, aumentando a adoção desta linguagem que nasceu no século passado. Mas, o que é Python e quais os seus usos? O Gui Silveira explica neste Hipsters.tube!"}
+        videoDescription="Com o crescimento do Data Science e Machine Learning, cada vez mais bibliotecas são escritas em Python, aumentando a adoção desta linguagem que nasceu no século passado. Mas, o que é Python e quais os seus usos? O Gui Silveira explica neste Hipsters.tube!"
       />
 
       <Carousel
@@ -27,19 +27,19 @@ function Home() {
 
       <Carousel
         category={dadosIniciais.categorias[2]}
-      />      
+      />
 
       <Carousel
         category={dadosIniciais.categorias[3]}
-      />      
+      />
 
       <Carousel
         category={dadosIniciais.categorias[4]}
-      />      
+      />
 
       <Carousel
         category={dadosIniciais.categorias[5]}
-      />      
+      />
 
       <Footer />
     </div>
