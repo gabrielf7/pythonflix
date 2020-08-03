@@ -10,45 +10,35 @@
       },
       "videos": [
         {
+          "id": 1,
+          "categoriaId": 1,
           "titulo": "O que é Python? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=-LATVnPcvHI"
         },
         {
+          "id": 2,
+          "categoriaId": 1,
           "titulo": "Python // Dicionário do Programador",
           "url": "https://www.youtube.com/watch?v=uOgDa1rlqjE"
         },
         {
+          "id": 3,
+          "categoriaId": 1,
           "titulo": "Python: Por que você deveria aprender?",
           "url": "https://www.youtube.com/watch?v=SZTNnRQQn5o"
         },
         {
-          "titulo": "Python na Prática fazendo Web Scraping",
-          "url": "https://www.youtube.com/watch?v=Vxl5jUltHBo&t"
-        }, 
-        {
-          "titulo": "Aprenda Python em 10 minutos! (Para iniciantes)",
-          "url": "https://www.youtube.com/watch?v=Q8eajxcS6dQ"
-        },
-        {
-          "titulo": "Curso introdutório de Python",
-          "url": "https://www.youtube.com/watch?v=yTQDbqmv8Ho&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B&index=6"
-        }, 
-        {
-          "titulo": "COMO PYTHON AJUDA NOSSA PRODUÇÃO DE VÍDEOS",
-          "url": "https://www.youtube.com/watch?v=eosclmulqqo&t"
-        },
-        {
-          "titulo": "Envio e Recebimento Automático de Mensagens no Whatsapp com Selenium - Python",
-          "url": "https://www.youtube.com/watch?v=yUy81n5vF0k"
-        },
-        {
-          "titulo": "Criamos um Utilitário com PYTHON! (finalizamos nosso mini-projeto) // Mão no Código #18",
-          "url": "https://www.youtube.com/watch?v=wuRJDHs-x94"
-        },
-        {
+          "id": 4,
+          "categoriaId": 1,
           "titulo": "DESAFIO | Django: Construindo um Blog em Minutos",
           "url": "https://www.youtube.com/watch?v=eK2sfDWQUXc"
-        }        
+        },
+        {
+          "id": 5,
+          "categoriaId": 1,
+          "titulo": "Envio e Recebimento Automático de Mensagens no Whatsapp com Selenium - Python",
+          "url": "https://www.youtube.com/watch?v=yUy81n5vF0k"
+        }      
       ]
     },
     {
@@ -60,28 +50,34 @@
       },
       "videos": [
         {
+          "id": 6,
+          "categoriaId": 2,
           "titulo": "O que é Django?",
           "url": "https://www.youtube.com/watch?v=9SUVYuPK2f4"
         },
         {
+          "id": 7,
+          "categoriaId": 2,
           "titulo": "Para o que serve o Django?",
           "url": "https://www.youtube.com/watch?v=vhv82UCIt3k"
         },
         {
+          "id": 8,
+          "categoriaId": 2,
           "text": "Tutorial de Django para Iniciantes - Curso Completo 9 horas [2020]",
           "url": "https://www.youtube.com/watch?v=K0pVZmw_pJU&t=4762s"
         }, 
         {
+          "id": 9,
+          "categoriaId": 2,
           "titulo": "Hands-On Django! Parte 1",
           "url": "https://www.youtube.com/watch?v=RrSLLDC3ys0&list=PL8jT95TXxeiDTkc4NIlIT9C3XfTV6rR1J"
         },
         {
+          "id": 10,
+          "categoriaId": 2,
           "titulo": "How to Build an E-commerce Website with Django and Python",
           "url": "https://www.youtube.com/watch?v=YZvRrldjf1Y"
-        },
-        {
-          "titulo": "Python Django Web Framework - Full Course for Beginners",
-          "url": "https://www.youtube.com/watch?v=F5mRW0jo-U4"
         }
       ]
     },
@@ -94,26 +90,32 @@
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-        },
-        {
+          "id": 11,
+          "categoriaId": 3,
           "titulo": "O que é Data Science?",
           "url": "https://www.youtube.com/watch?v=ccZ2pyr3YDw&list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-"
         },
         {
+          "id": 12,
+          "categoriaId": 3,
           "titulo": "Melhor forma de aprender Python",
           "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY&list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-&index=2"
         },
         {
+          "id": 13,
+          "categoriaId": 3,
           "titulo": "Data Science: Introdução a Ciência de Dados",
           "url": "https://www.youtube.com/watch?v=F608hzn_ygo&list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-&index=3"
         },
         {
+          "id": 14,
+          "categoriaId": 3,
           "titulo": "Machine Learning: Tutorial prático usando apenas o navegador",
           "url": "https://www.youtube.com/watch?v=JyGGMyR3x5I&list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-&index=4"
         },
         {
+          "id": 15,
+          "categoriaId": 3,
           "titulo": "Data Visualization: crie os melhores gráficos para os seus dados",
           "url": "https://www.youtube.com/watch?v=qLiEDvs57nk&list=PLMdYygf53DP7YZiFUtGTWJJlvynRyrna-&index=5"
         }
@@ -128,22 +130,32 @@
       },
       "videos": [
         {
+          "id": 16,
+          "categoriaId": 4,
           "titulo": "Selenium com Python #00 - Abertura do curso",
           "url": "https://www.youtube.com/watch?v=PHHXksljGNA&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B"
         },
         {
+          "id": 17,
+          "categoriaId": 4,
           "titulo": "Selenium com Python #02 - O que é selenium?",
           "url": "https://www.youtube.com/watch?v=wiA6PBz0Xu0&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B&index=5"
         },
         {
+          "id": 18,
+          "categoriaId": 4,
           "titulo": "Selenium com Python #03 - Minha primeira automação",
           "url": "https://www.youtube.com/watch?v=Pax0jiAcTWs&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B&index=7"
         },
         {
+          "id": 19,
+          "categoriaId": 4,
           "titulo": "Selenium com Python #04 - Navegação e atributos",
           "url": "https://www.youtube.com/watch?v=H6D8EFSGml0&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B&index=8"
         },
         {
+          "id": 20,
+          "categoriaId": 4,
           "titulo": "Selenium com Python #05 - Procurando e interagindo com elementos p.I",
           "url": "https://www.youtube.com/watch?v=KqNTFAgDTrw&list=PLOQgLBuj2-3LqnMYKZZgzeC7CKCPF375B&index=10"
         }
@@ -158,22 +170,32 @@
       },
       "videos": [
         {
+          "id": 21,
+          "categoriaId": 5,
           "titulo": "Python - Aula 01",
           "url": "https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0"
         },
         {
+          "id": 22,
+          "categoriaId": 5,
           "titulo": "Python - Aula 02",
           "url": "https://www.youtube.com/watch?v=Mp0vhMDI7fA&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=3U"
         },
         {
+          "id": 23,
+          "categoriaId": 5,
           "titulo": "Python - Aula 03",
           "url": "https://www.youtube.com/watch?v=VuKvR1J2LQE&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=4"
         },
         {
+          "id": 24,
+          "categoriaId": 5,
           "titulo": "Python - Aula 04",
           "url": "https://www.youtube.com/watch?v=31llNGKWDdo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=5"
         },
         {
+          "id": 25,
+          "categoriaId": 5,
           "titulo": "Python - Aula 05",
           "url": "https://www.youtube.com/watch?v=ElRd0cbXIv4&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=6"
         }
@@ -188,22 +210,32 @@
       },
       "videos": [
         {
+          "id": 26,
+          "categoriaId": 6,
           "titulo": "Como estudar melhor?",
           "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
         },
         {
+          "id": 27,
+          "categoriaId": 6,
           "titulo": "Faculdade",
           "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
         },
         {
+          "id": 28,
+          "categoriaId": 6,
           "titulo": "Frameworks",
           "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
         },
         {
+          "id": 29,
+          "categoriaId": 6,
           "titulo": "A mágica do Aprendizado",
           "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
         },
         {
+          "id": 30,
+          "categoriaId": 6,
           "titulo": "Como aprender a programar?",
           "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
         }
