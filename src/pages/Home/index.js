@@ -46,36 +46,6 @@ function Home() {
         );
       })}
 
-      {/* <BannerMain
-          videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-          url={dadosIniciais.categorias[0].videos[0].url}
-          videoDescription="Com o crescimento do Data Science e Machine Learning, cada vez mais bibliotecas são escritas em Python, aumentando a adoção desta linguagem que nasceu no século passado. Mas, o que é Python e quais os seus usos? O Gui Silveira explica neste Hipsters.tube!"
-        />
-
-        <Carousel
-          ignoreFirstVideo
-          category={dadosIniciais.categorias[0]}
-        />
-
-        <Carousel
-          category={dadosIniciais.categorias[1]}
-        />
-
-        <Carousel
-          category={dadosIniciais.categorias[2]}
-        />
-
-        <Carousel
-          category={dadosIniciais.categorias[3]}
-        />
-
-        <Carousel
-          category={dadosIniciais.categorias[4]}
-        />
-
-        <Carousel
-          category={dadosIniciais.categorias[5]}
-      /> */}
     </PageDefault>
   );
 }
