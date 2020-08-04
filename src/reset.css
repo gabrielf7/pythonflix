@@ -5,9 +5,11 @@
 
 :root {
   --primary: #00ec1c;
+  --pysecondary: #16484B;
   --pyblue: #4989bb;
   --pyellow: #ffe263;
   --black: #000000;
+  --pyblackeasy: #141414;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 

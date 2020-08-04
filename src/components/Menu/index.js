@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import Logo from '../../assets/Logo.png';
 import './styles.css';
 import Button from '../Button';
@@ -10,9 +10,11 @@ function Menu() {
       <Link to="/">
         <img className="Logo" src={Logo} alt="PythonFlix Logo" />
       </Link>
-      <Button as={Link} className="ButtonLink" to="/cadastro/video">
-        Novo vídeo
-      </Button>
+      <Route>
+        <Button as={Link} className="ButtonLink" to="/cadastro/video">
+          Novo vídeo
+        </Button>
+      </Route>
     </nav>
   );
 }

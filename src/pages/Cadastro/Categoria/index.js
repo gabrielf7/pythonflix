@@ -1,34 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import PageDefault from '../../../components/PageDefault';
+import PageDefault, { Main } from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import { Back } from '../../../components/Back';
+import useForm from '../../../hooks/useForm';
 
 export default function CadastroCategoria() {
-  const [categorias, setCategorias] = useState([]);
-
   const valoresInciais = {
     nome: '',
     descricao: '',
     cor: '',
   };
 
-  const [valores, setValores] = useState(valoresInciais);
+  const { handleChange, valores, clearForm } = useForm(valoresInciais);
 
-  function setValor(chave, valor) {
-    // chave: nome, descricao, cor, ...
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValor(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
+  const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
     const URL_TOP = window.location.hostname.includes('localhost')
@@ -64,67 +51,71 @@ export default function CadastroCategoria() {
 
   return (
     <PageDefault>
-      <Button as={Link} to="/">
-        Ir para home
-      </Button>
-      <h2>
-        Cadastro de Categoria:
-        {' '}
-        {valores.nome}
-      </h2>
-
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          valores,
-        ]);
-
-        setValores(valoresInciais);
-      }}
-      >
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          value={valores.nome}
-          name="nome"
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Descrição"
-          type="textarea"
-          value={valores.descricao}
-          name="descricao"
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Cor"
-          type="color"
-          value={valores.cor}
-          name="cor"
-          onChange={handleChange}
-        />
-
-        <Button>
-          Cadastrar
+      <Back>
+        <Button as={Link} to="/cadastro/video">
+          Voltar
         </Button>
-      </form>
+      </Back>
+      <Main>
+        <h1>
+          Cadastro de Categoria:
+          { ' ' }
+          {valores.nome}
+        </h1>
 
-      {categorias.length === 0 && (
-        <div>
-          Carregando...
-        </div>
-      )}
+        <form onSubmit={function handleSubmit(infosDoEvento) {
+          infosDoEvento.preventDefault();
+          setCategorias([
+            ...categorias,
+            valores,
+          ]);
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
-          </li>
-        ))}
-      </ul>
+          clearForm();
+        }}
+        >
+          <FormField
+            label="Nome da Categoria"
+            type="text"
+            value={valores.nome}
+            name="nome"
+            onChange={handleChange}
+          />
+
+          <FormField
+            label="Descrição"
+            type="textarea"
+            value={valores.descricao}
+            name="descricao"
+            onChange={handleChange}
+          />
+
+          <FormField
+            label="Cor"
+            type="color"
+            value={valores.cor}
+            name="cor"
+            onChange={handleChange}
+          />
+
+          <Button>
+            Cadastrar
+          </Button>
+        </form>
+
+        {categorias.length === 0 && (
+          <div>
+            Carregando...
+          </div>
+        )}
+
+        <ul>
+          {categorias.map((categoria) => (
+            <li key={`${categoria.titulo}`}>
+              {categoria.titulo}
+            </li>
+          ))}
+        </ul>
+      </Main>
     </PageDefault>
   );
 }
