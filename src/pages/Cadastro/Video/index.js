@@ -4,10 +4,10 @@ import PageDefault, { Main } from '../../../components/PageDefault';
 import { Back } from '../../../components/Back';
 import Button from '../../../components/Button';
 // import FormField from '../../../components/FormField';
-import useForm from '../../../hooks/useForm';
+// import useForm from '../../../hooks/useForm';
 
 export default function CadastroVideo() {
-  const { handleChange, valores } = useForm();
+  // const { handleChange, valores } = useForm();
 
   return (
     <PageDefault>
