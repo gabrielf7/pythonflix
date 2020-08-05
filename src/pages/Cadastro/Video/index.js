@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault, { Main } from '../../../components/PageDefault';
 import { Back } from '../../../components/Back';
 import Button from '../../../components/Button';
-import FormField from '../../../components/FormField';
+// import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 
 export default function CadastroVideo() {
@@ -19,14 +19,14 @@ export default function CadastroVideo() {
       <Main>
         <h2>Cadastrar Vídeo</h2>
 
-        <form>
+        {/* <form>
           <FormField
             label="Título do vídeo"
             name="titulo"
             value={valores.titulo}
             onChange={handleChange}
           />
-        </form>
+        </form> */}
 
         <Link to="/cadastro/categoria">
           Cadastrar Categoria
