@@ -58,9 +58,9 @@ export default function CadastroCategoria() {
       </Back>
       <Main>
         <h1>
-          Cadastro de Categoria:
+          $_Cadastro de Categoria
           { ' ' }
-          {valores.nome}
+          {/* {valores.nome} */}
         </h1>
 
         <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -97,7 +97,7 @@ export default function CadastroCategoria() {
             onChange={handleChange}
           />
 
-          <Button>
+          <Button type="submit">
             Cadastrar
           </Button>
         </form>

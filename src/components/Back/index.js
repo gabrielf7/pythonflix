@@ -1,16 +1,20 @@
 import styled from 'styled-components';
 
 export const Back = styled.div`
-  background-color: var(--black);
   padding-top: 5px;
   margin-left: -5%;
-  padding-right: 2%;
+  padding-right: -5%;
+  display: flex;
+  justify-content: space-between;
 
   @media (max-width: 800px) {
-    flex: 1;
-    padding-top: 30px;
-    padding-left: 2%;
-    padding-right: 30%;
+    padding-top: 5px;
+    padding-left: 5%;
+    text-align: center;
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+
   }
 `;
 

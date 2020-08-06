@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import PageDefault, { Main } from '../../../components/PageDefault';
 import { Back } from '../../../components/Back';
 import Button from '../../../components/Button';
-// import FormField from '../../../components/FormField';
-// import useForm from '../../../hooks/useForm';
+import FormField from '../../../components/FormField';
+import useForm from '../../../hooks/useForm';
 
-export default function CadastroVideo() {
-  // const { handleChange, valores } = useForm();
+function CadastroVideo() {
+  const { handleChange, valores } = useForm({
+
+  });
 
   return (
     <PageDefault>
@@ -15,9 +17,13 @@ export default function CadastroVideo() {
         <Button as={Link} to="/">
           Voltar
         </Button>
+
+        <Button as={Link} to="/cadastro/categoria">
+          Categoria
+        </Button>
       </Back>
       <Main>
-        <h2>Cadastrar Vídeo</h2>
+        <h1>$_Cadastro de Vídeo</h1>
 
         {/* <form>
           <FormField
@@ -26,12 +32,13 @@ export default function CadastroVideo() {
             value={valores.titulo}
             onChange={handleChange}
           />
-        </form> */}
-
-        <Link to="/cadastro/categoria">
-          Cadastrar Categoria
-        </Link>
+        </form>
+        <Button type="submit">
+          Cadastrar
+        </Button> */}
       </Main>
     </PageDefault>
   );
 }
+
+export default CadastroVideo;

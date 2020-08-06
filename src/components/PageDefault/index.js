@@ -11,6 +11,7 @@ export const Main = styled.main`
   padding-top: 30px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 16px;
   ${({ paddingAll }) => css`
      padding: ${paddingAll};
   `}
