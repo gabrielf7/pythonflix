@@ -5,6 +5,10 @@ import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import { Back } from '../../../components/Back';
 import useForm from '../../../hooks/useForm';
+import Menu from '../../../components/Menu';
+import ButtonMenu from '../../../components/Button/indexMenu';
+import Carregando from '../../../assets/pizza.gif';
+import { Lista } from './styles';
 
 export default function CadastroCategoria() {
   const valoresInciais = {
@@ -51,30 +55,35 @@ export default function CadastroCategoria() {
 
   return (
     <PageDefault>
+      <Menu>
+        <ButtonMenu as={Link} to="/cadastro/video">
+          Novo vídeo
+        </ButtonMenu>
+      </Menu>
       <Back>
-        <Button as={Link} to="/cadastro/video">
-          Voltar
+        <Button as={Link} to="/">
+          Ir para home
         </Button>
       </Back>
       <Main>
-        <h1>
-          $_Cadastro de Categoria
-          { ' ' }
-          {/* {valores.nome} */}
-        </h1>
+        <form
+          onSubmit={function handleSubmit(infosDoEvento) {
+            infosDoEvento.preventDefault();
+            setCategorias([
+              ...categorias,
+              valores,
+            ]);
 
-        <form onSubmit={function handleSubmit(infosDoEvento) {
-          infosDoEvento.preventDefault();
-          setCategorias([
-            ...categorias,
-            valores,
-          ]);
-
-          clearForm();
-        }}
+            clearForm();
+          }}
         >
+          <h1>
+            Cadastro de Categoria
+            { ' ' }
+            {/* {valores.nome} */}
+          </h1>
           <FormField
-            label="Nome da Categoria"
+            label="Nome da Categoria:"
             type="text"
             value={valores.nome}
             name="nome"
@@ -82,7 +91,7 @@ export default function CadastroCategoria() {
           />
 
           <FormField
-            label="Descrição"
+            label="Descrição:"
             type="textarea"
             value={valores.descricao}
             name="descricao"
@@ -90,7 +99,7 @@ export default function CadastroCategoria() {
           />
 
           <FormField
-            label="Cor"
+            label="Selecione a cor:"
             type="color"
             value={valores.cor}
             name="cor"
@@ -103,18 +112,22 @@ export default function CadastroCategoria() {
         </form>
 
         {categorias.length === 0 && (
-          <div>
-            Carregando...
+          <div style={{ textAlign: 'center', marginTop: '10%' }}>
+            <img src={Carregando} alt="loading" />
           </div>
         )}
 
-        <ul>
-          {categorias.map((categoria) => (
-            <li key={`${categoria.titulo}`}>
-              {categoria.titulo}
-            </li>
-          ))}
-        </ul>
+        <Lista>
+          <ul>
+            {/* className={Lista} */}
+            <h2>Lista de Categoria</h2>
+            {categorias.map((categoria) => (
+              <li key={`${categoria.titulo}`}>
+                {categoria.titulo}
+              </li>
+            ))}
+          </ul>
+        </Lista>
       </Main>
     </PageDefault>
   );

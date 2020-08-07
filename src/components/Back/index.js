@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const Back = styled.div`
-  padding-top: 5px;
-  margin-left: -5%;
-  padding-right: -5%;
+  margin-top: 7px;
+  margin-left: -7%;
   display: flex;
   justify-content: space-between;
 

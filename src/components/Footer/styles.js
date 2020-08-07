@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterBase = styled.footer`
-  background: var(--black);
-  border-top: 2px solid var(--primary);
+  background: var(--pygreeneasy);
+  border-top: 2px solid var(--pyprimary);
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 32px;

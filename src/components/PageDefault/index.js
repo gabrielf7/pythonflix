@@ -5,10 +5,9 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 
 export const Main = styled.main`
-  background-color: var(--pyblackeasy);
+  background-color: var(--pyblueblack);
   color: var(--white);
   flex: 1;
-  padding-top: 30px;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 16px;

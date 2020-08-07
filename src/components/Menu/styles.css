@@ -24,8 +24,8 @@
   padding-left: 5%;
   padding-right: 5%;
 
-  background: var(--black);
-  border-bottom: 2px solid var(--primary);
+  background: var(--pygreeneasy);
+  border-bottom: 2px solid var(--pyprimary);
 }
 
 body {
@@ -46,22 +46,6 @@ body {
 
 @media (max-width: 800px) {
   img.Logo {
-      text-align: center;
-  }
-  a.ButtonLink {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      color: var(--white);
-      background: var(--primary);
-      border-radius: 0;
-      border: 0;
-      text-align: center;
-      transition: opacity .3s;
-  }
-  a.ButtonLink:hover, 
-  a.ButtonLink:focus {
-      opacity: .85;
+    text-align: center;
   }
 }
