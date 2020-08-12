@@ -66,7 +66,7 @@ function CadastroVideo() {
           })
             .then(() => {
               // eslint-disable-next-line no-console
-              console.log('Cadastrado com sucesso!!!');
+              // console.log('Cadastrado com sucesso!!!');
               history.push('/');
             });
         }}
