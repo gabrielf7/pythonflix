@@ -55,14 +55,14 @@ function CadastroVideo() {
           // const categoriaEscolhida = categorias.find((categoria) => {
           //   return categoria.titulo === valores.categoria;
           // });
-          // const categoriaEscolhida = categorias.find((categoria) => (
-          //   categoria.titulo === valores.categoria
-          // ));
+          const categoriaEscolhida = categorias.find((categoria) => (
+            categoria.titulo === valores.categoria
+          ));
 
           videosRespository.create({
             titulo: valores.titulo,
             url: valores.url,
-            categoriaId: 'categoriaEscolhida.id',
+            categoriaId: categoriaEscolhida.id,
           })
             .then(() => {
               // eslint-disable-next-line no-console

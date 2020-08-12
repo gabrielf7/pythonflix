@@ -30,7 +30,7 @@ a {
 } 
 
 #root{
-  min-height: calc(83vh - var(--bodyPaddingTop));
+  min-height: calc(80vh - var(--bodyPaddingTop));
   display: flex;
   flex-direction: column;
 }
