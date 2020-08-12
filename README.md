@@ -1,6 +1,6 @@
 # PythonFlix
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-green.svg)](https://github.com/gabrielf7/pythonflix/blob/master/LICENSE)
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/gabrielf7/pythonflix/blob/master/LICENSE)
 
 <p align="center">
   <img alt="Logo do projeto" src="https://github.com/gabrielf7/pythonflix/blob/master/src/assets/Logo.png" />
