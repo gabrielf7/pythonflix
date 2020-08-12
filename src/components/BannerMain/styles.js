@@ -66,7 +66,7 @@ ContentAreaContainer.Title = styled.h2`
 `;
 
 export const BannerMainContainer = styled.section`
-  height: 80vh;
+  height: 90vh;
   position: relative;
   color: #fff;
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 
@@ -96,7 +96,7 @@ export const BannerMainContainer = styled.section`
 
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, var(--pyblueblack) 0%, transparent 100%);
+    background: linear-gradient(0deg, var(--pysecondary) 0%, transparent 100%);
   }
 `;
 

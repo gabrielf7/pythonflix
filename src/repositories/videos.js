@@ -1,9 +1,15 @@
 import config from '../config';
 
-const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias`;
+const URL_VIDEOS = `${config.URL_BACKEND_TOP}/videos`;
 
-function getAllWithVideos() {
-  return fetch(`${URL_CATEGORIES}?_embed=videos`)
+function create(objetoDoVideo) {
+  return fetch(`${URL_VIDEOS}?_embed=videos`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(objetoDoVideo),
+  })
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
@@ -15,5 +21,5 @@ function getAllWithVideos() {
 }
 
 export default {
-  getAllWithVideos,
+  create,
 };

@@ -20,7 +20,9 @@ function Carousel({
           </Title>
           {categoryExtraLink
             && (
-            <ExtraLink href={categoryExtraLink.url}>
+            <ExtraLink
+              href={categoryExtraLink.url}
+            >
               {categoryExtraLink.text}
             </ExtraLink>
             )}

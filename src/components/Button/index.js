@@ -4,7 +4,7 @@ const Button = styled.button`
     background-color: inherit;
     color: var(--pyprimary);
     border: inherit;
-    border-bottom: 1px solid var(--pyprimary);
+    border-bottom: 1px solid var(--pyellow);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;

@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import categoriasRepository from '../../repositories';
+import categoriasRepository from '../../repositories/categorias';
 import PageDefault from '../../components/PageDefault';
-import Carregando from '../../assets/external.gif';
+import Carregando from '../../assets/snake-2.gif';
 import Menu from '../../components/Menu';
 import ButtonMenu from '../../components/Button/indexMenu';
+import { Loading } from '../../components/Loading/styles-loading-v1';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -28,9 +29,10 @@ function Home() {
         </ButtonMenu>
       </Menu>
       {dadosIniciais.length === 0 && (
-        <div style={{ textAlign: 'center', margin: '10%' }}>
+        <Loading>
           <img src={Carregando} alt="loading" />
-        </div>
+          <p>Carregando...</p>
+        </Loading>
       )}
 
       {dadosIniciais.map((categoria, indice) => {
@@ -58,7 +60,6 @@ function Home() {
           />
         );
       })}
-
     </PageDefault>
   );
 }

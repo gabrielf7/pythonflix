@@ -5,7 +5,7 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 
 export const Main = styled.main`
-  background-color: var(--pyblueblack);
+  background-color: var(--pysecondary);
   color: var(--white);
   flex: 1;
   padding-left: 10%;

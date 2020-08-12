@@ -7,8 +7,9 @@ import { Back } from '../../../components/Back';
 import useForm from '../../../hooks/useForm';
 import Menu from '../../../components/Menu';
 import ButtonMenu from '../../../components/Button/indexMenu';
-import Carregando from '../../../assets/pizza.gif';
+import Carregando from '../../../assets/snake.gif';
 import { Lista } from './styles';
+import { Loading } from '../../../components/Loading/styles-loading-v1';
 
 export default function CadastroCategoria() {
   const valoresInciais = {
@@ -87,6 +88,7 @@ export default function CadastroCategoria() {
             type="text"
             value={valores.nome}
             name="nome"
+            placeholder="Insira um nome para categoria"
             onChange={handleChange}
           />
 
@@ -95,6 +97,7 @@ export default function CadastroCategoria() {
             type="textarea"
             value={valores.descricao}
             name="descricao"
+            placeholder="Insira uma descrição"
             onChange={handleChange}
           />
 
@@ -112,15 +115,14 @@ export default function CadastroCategoria() {
         </form>
 
         {categorias.length === 0 && (
-          <div style={{ textAlign: 'center', marginTop: '10%' }}>
+          <Loading>
             <img src={Carregando} alt="loading" />
-          </div>
+            <p>Carregando...</p>
+          </Loading>
         )}
-
         <Lista>
+          <h2>Lista de Categoria</h2>
           <ul>
-            {/* className={Lista} */}
-            <h2>Lista de Categoria</h2>
             {categorias.map((categoria) => (
               <li key={`${categoria.titulo}`}>
                 {categoria.titulo}
