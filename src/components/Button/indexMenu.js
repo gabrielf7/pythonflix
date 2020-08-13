@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const ButtonMenu = styled.button`
-  background-color: inherit;
-  color: var(--pyprimary);
+  background: linear-gradient(190deg, rgba(22,72,75,100) 35%, rgba(14,209,234,100) 100%);
+  color: var(--white);
   border: inherit;
-  border-bottom: 1px solid var(--pyellow);
+  border-bottom: 3px solid var(--pyellow);
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -14,13 +14,13 @@ const ButtonMenu = styled.button`
   outline: none;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
-  transition: opacity .5s ease-in;
+  display: inline;
+  transition: opacity .2s ease-in;
 
     &:hover, 
     &:focus {
-      opacity: .50;
-      border-top: 2px solid var(--white);
+      opacity: .77;
+      border-top: 2px solid var(--pyellow);
       border-bottom: none;
     }
 
@@ -38,7 +38,7 @@ const ButtonMenu = styled.button`
     
     &:hover, 
     &:focus {
-      opacity: .85;
+      opacity: .77;
     }
   }
 `;

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-    background-color: inherit;
-    color: var(--pyprimary);
+    background: linear-gradient(-7deg,  rgba(14,209,234,100) 25%, rgba(20,80,78,100) 45%);
+    color: var(--white);
     border: inherit;
-    border-bottom: 1px solid var(--pyellow);
+    border-left: 3px solid var(--pyellow);
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;
@@ -15,13 +15,13 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
-    transition: opacity .5s ease-in;
+    transition: .5s ease-in;
 
     &:hover, 
     &:focus {
-      opacity: .50;
-      border-top: 2px solid var(--white);
-      border-bottom: none;
+      /* opacity: .57; */
+      transition-delay: 5s;
+      background: linear-gradient(7deg,  rgba(14,209,234,100) 25%, rgba(20,80,78,100) 45%);
     }
 `;
 

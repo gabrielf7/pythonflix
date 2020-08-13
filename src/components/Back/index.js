@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Back = styled.div`
-  margin-top: 7px;
+  margin-top: 15px;
   margin-left: -7%;
   display: flex;
   justify-content: space-between;
