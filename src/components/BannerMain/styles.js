@@ -111,7 +111,7 @@ export const WatchButton = styled.a`
   display: inline-block;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   outline: none;
   border-radius: 5px;
   text-align: center;
