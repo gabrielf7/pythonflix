@@ -8,12 +8,19 @@ export const Main = styled.main`
   background-color: var(--pysecondary);
   color: var(--white);
   flex: 1;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 16px;
+
   ${({ paddingAll }) => css`
      padding: ${paddingAll};
   `}
+
+  @media (max-width: 800px) {
+    form h1 {
+      font-size: 29px;
+    }
+  }
 `;
 
 function PageDefault({ children, paddingAll }) {

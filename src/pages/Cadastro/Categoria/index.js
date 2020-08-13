@@ -80,8 +80,6 @@ export default function CadastroCategoria() {
         >
           <h1>
             Cadastro de Categoria
-            { ' ' }
-            {/* {valores.nome} */}
           </h1>
           <FormField
             label="Nome da Categoria:"
@@ -114,14 +112,14 @@ export default function CadastroCategoria() {
           </Button>
         </form>
 
-        {categorias.length === 0 && (
-          <Loading>
-            <img src={Carregando} alt="loading" />
-            <p>Carregando...</p>
-          </Loading>
-        )}
         <Lista>
           <h2>Lista de Categoria</h2>
+          {categorias.length === 0 && (
+            <Loading>
+              <img src={Carregando} alt="loading" />
+              <p>Carregando...</p>
+            </Loading>
+          )}
           <ul>
             {categorias.map((categoria) => (
               <li key={`${categoria.titulo}`}>
