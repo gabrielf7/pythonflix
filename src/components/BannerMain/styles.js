@@ -100,26 +100,33 @@ export const BannerMainContainer = styled.section`
   }
 `;
 
-export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
+export const WatchButton = styled.a`
+  background: linear-gradient(-7deg,  rgba(14,209,234,100) 25%, rgba(20,80,78,100) 45%);
+  color: var(--white);
+  border: inherit;
+  border-left: 3px solid var(--pyellow);
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
+  display: inline-block;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 25px;
   outline: none;
   border-radius: 5px;
+  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  border: 1px solid transparent;
-  color: var(--black);
-  background: var(--white);
-  border-color: var(--black);
-  transition: opacity .3s;
   display: none;
+  transition: .5s ease-in;
   margin: 0 auto;
+
+  &:hover, 
+  &:focus {
+    transition-delay: 5s;
+    background: linear-gradient(7deg,  rgba(14,209,234,100) 25%, rgba(20,80,78,100) 45%);
+  }
+
   @media (max-width: 800px) {
-    display: block;
+    display: inline-block;
   }
 `;
