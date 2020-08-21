@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "titulo": "Python no Back-End - Django",
+      "titulo": "Python no Back-End",
       "cor": "#00C86F",
       "link_extra": {
         "text": "Formação de Django na Alura",
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "titulo": "Curso em Vídeo - Python",
+      "titulo": "Python no Curso em Vídeo",
       "cor": "orange",
       "link_extra": {
         "text": "Certificado do Curso em Vídeo sobre Python",
