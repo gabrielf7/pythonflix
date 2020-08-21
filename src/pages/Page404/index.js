@@ -2,20 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import Button from '../../components/Button';
-import StylesPage404 from './styles';
 
 export const Page404 = () => (
   <PageDefault>
-    <StylesPage404 align="center">
+    <div align="center">
       <h1>Error 404</h1>
       <h4>Esta página não existe ou ainda está em desenvolvimento.</h4>
       <Button as={Link} to="/">Volte para home</Button>
-    </StylesPage404>
-    <StylesPage404 align="center">
+    </div>
+    <div align="center">
       <p>Ou</p>
       <h3>Acesse a Live do <strong>MarcoBruno na Twitch</strong></h3>
       <Button as="a" href="https://www.twitch.tv/marcobrunodev">Acesse aqui</Button>
-    </StylesPage404>
+    </div>
     {/* <Iframe src="https://mariosouto.com/flappy-bird-devsoutinho/" scrolling="no" frameborder="no" /> */}
   </PageDefault>
 );
