@@ -7,6 +7,11 @@ export const Iframe = styled.iframe`
     margin-bottom: 16px;
     border: none;
     text-align: center;
+
+    h3 strong {
+        border: 0;
+        border-bottom: 2px solid var(--pypinkblack);
+    }
 `;
 
 export default Iframe;
