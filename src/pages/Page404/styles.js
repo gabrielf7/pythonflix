@@ -8,9 +8,6 @@ export const StylesPage404 = styled.div`
     border: none;
     text-align: center; */
 
-    justify-content: center;
-    align-items: center;
-
     h3 strong {
         border: 0;
         border-bottom: 2px solid var(--pypinkblack);
