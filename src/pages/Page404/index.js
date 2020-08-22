@@ -13,7 +13,7 @@ export const Page404 = () => (
     <div align="center">
       <p>Ou</p>
       <h3>Acesse a Live do <strong>MarcoBruno na Twitch</strong></h3>
-      <Button as="a" href="https://www.twitch.tv/marcobrunodev">Acesse aqui</Button>
+      <Button as={Link} href="https://www.twitch.tv/marcobrunodev">Acesse aqui</Button>
     </div>
     {/* <Iframe src="https://mariosouto.com/flappy-bird-devsoutinho/" scrolling="no" frameborder="no" /> */}
   </PageDefault>
